@@ -58,7 +58,7 @@ app.get('/robots.txt',function (req,res) {
 
  //1.6 render an Html page
  app.get('/html', function (req,res) {
-    res.sendFile(path.join(__dirname ,'ui','file.html'));
+    res.sendFile(path.join(__dirname ,'file.html'));
 });
 
 //1.7 text-box
