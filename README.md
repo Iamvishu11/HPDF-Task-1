@@ -1,17 +1,29 @@
-# HPDF-Task-1
-This repository contains all the completed projects that were assigned to me as a part of the HPDF tasks. You can view documentation on how to run each project (task) inside the folder of each project.
+# TASK-1
+This task involves me to get some details from an external API and print them. And some othe miscellaneous tasks. Below, I've discussed about the endpoints. You can use that as a documentation.
 
-# Structure
-Each folder represents a project associated with a task. Each folder (project) has a README which instructs on how to run the project on your system.
+## Installation
+1. First, you are required to run NPM inside this project which can be achieved by doing this:
 
-# Global requirements
-These underlaying things are important to be installed in your system. These requirements applies to every project. If in case any project requires anything more - it will be specified in the specific project's README
+* NPM:
 
-Node >= 9.2.0
-NPM >= 4.0.0
-Yarn >= 1.3.2 (Recommended as an alternative to NPM)
+  `$ npm init`
+	
+2. Now, you can simply start the application by running this command:
 
-# About
-These projects are built by xXAlphaManXx. All these projects are licensed under the MIT license. You are free to redistrubute the code and do what-so-over unless mentioned.
+   `$ node .`
 
-These projects are just purely educational. No security test or updates to be expect
+## End-points:
+
+Each endpoint serves different uses. In the `app.js` each `METHOD` is grouped together.
+-----------------------------------------------------------------------------------------------------------------------------------------
+|   Endpoints   |   METHOD    |                         Description                                                                     |
+|---------------|-------------|---------------------------------------------------------------------------------------------------------|
+|    `/`        |   `GET`     |*Returns the index page of the site                                                                      |
+|  `/authors`   |   `GET`     |*Fetches list of authors and posts from an API and prints a list of authors and the count of their posts |
+|  `/setcookie` |   `GET`     |*The server sets two cookies (name, age) which contains the name and age of the author (me :P )          |
+| `/getcookie`  |   `GET`     |*Responds with the content took from the cookie saved previously by /setcookie endpoint                  |
+|`/robots.txt`  |   `GET`     |*Responds with a 403 status code and returns an rendered error page                                      |
+|  `/html`      |   `GET`     |*Responds with old age HTML page that works even in Windows NT 3.5                                       |
+|  `/input`     |   `GET`     |*Responds with a HTML form that sends user entered data to POST /input                                   |
+|  `/input`     |   `POST`    |*Displays the data sent from GET /input to the browser as response and in the Console also               |
+
